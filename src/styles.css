@@ -103,3 +103,24 @@
  .floatingWa{bottom:76px}
  footer{padding-bottom:55px}
 }
+
+
+/* Four-column institute footer */
+.siteFooter{background:#061832;color:#fff;padding:48px max(calc((100vw - 1150px)/2),5%) 0}
+.siteFooter .footerMain{display:grid;grid-template-columns:1.35fr .8fr 1fr 1.2fr;gap:36px;align-items:start;padding-bottom:38px}
+.footerBrandCol .brand{display:inline-flex}
+.footerBrandCol>p{font-size:11px;line-height:1.9;color:#91a8c2;max-width:260px;margin:18px 0}
+.footerBrandCol .footerWa{display:inline-flex;color:#fff}
+.footerColumn{display:flex;flex-direction:column;align-items:flex-start;gap:12px}
+.footerColumn h3{font:800 13px Manrope;color:#fff;margin:3px 0 8px}
+.footerColumn>button{border:0;padding:0;background:none;color:#9bb0c8;font:500 10px Inter,sans-serif;cursor:pointer;text-align:left;transition:color .2s}
+.footerColumn>button:hover,.footerBottom button:hover{color:#fff}
+.footerContact>a{display:flex;align-items:flex-start;gap:10px;color:#a9bdd3;font-size:10px;line-height:1.7}
+.footerContact>a>svg,.footerHours>svg{width:16px;height:16px;min-width:16px;color:#72baff;margin-top:2px}
+.footerContact a small{display:block;color:#6f89a6;font-size:9px;margin-top:2px}
+.footerHours{display:flex;align-items:flex-start;gap:9px;color:#849bb5;font-size:9px;line-height:1.7;margin:2px 0 0}
+.siteFooter .footerBottom{border-top:1px solid #1b3453;padding:17px 0;display:flex;align-items:center;gap:20px;color:#7890ad;font-size:9px}
+.siteFooter .footerBottom span:first-child{margin-right:auto}
+.siteFooter .footerBottom button{border:0;background:none;color:#9bb0c8;font-size:9px;cursor:pointer}
+@media(max-width:900px){.siteFooter .footerMain{grid-template-columns:1fr 1fr;gap:30px}.footerBrandCol>p{max-width:340px}}
+@media(max-width:560px){.siteFooter{padding:38px 20px 0}.siteFooter .footerMain{grid-template-columns:1fr 1fr;gap:28px 18px}.footerBrandCol{grid-column:1/-1}.footerContact{grid-column:1/-1}.siteFooter .footerBottom{flex-wrap:wrap;gap:10px}.siteFooter .footerBottom span:first-child{width:100%;margin:0}.siteFooter .footerBottom button{margin-left:auto}}
