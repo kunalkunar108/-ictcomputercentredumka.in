@@ -135,7 +135,19 @@ export default function App() {
    </section>
   </div>}
 
-  <footer><div className="footerMain"><a className="brand inverse" href="#home"><span className="brandIcon"><Monitor/></span><span><b>ICT</b><small>COMPUTER CENTRE</small></span></a><p>Computer education and training in Dumka, Jharkhand.</p><div className="footerLinks"><button onClick={()=>scroll("courses")}>Courses</button><button onClick={()=>scroll("faculty")}>Faculty</button><button onClick={()=>scroll("gallery")}>Gallery</button><button onClick={()=>scroll("faq")}>FAQs</button><button onClick={()=>scroll("contact")}>Contact</button></div><a className="footerWa" href={wa('Hello ICT Computer Centre, please share course and admission details.')} target="_blank" rel="noreferrer"><MessageCircle/> WhatsApp us</a></div><div className="footerBottom"><span>© {new Date().getFullYear()} ICT Computer Centre. All rights reserved.</span><span>Dumka, Jharkhand</span></div></footer>
+  <footer className="siteFooter">
+   <div className="footerMain">
+    <div className="footerBrandCol">
+     <a className="brand inverse" href="#home"><span className="brandIcon"><Monitor/></span><span><b>ICT</b><small>COMPUTER CENTRE</small></span></a>
+     <p>Computer education and skill training in Dumka. Explore courses and contact the institute directly for current admission information.</p>
+     <a className="footerWa" href={wa('Hello ICT Computer Centre, please share course and admission details.')} target="_blank" rel="noreferrer"><MessageCircle/> WhatsApp Enquiry</a>
+    </div>
+    <div className="footerColumn"><h3>Quick Links</h3><button onClick={()=>scroll("home")}>Home</button><button onClick={()=>scroll("about")}>About Us</button><button onClick={()=>scroll("courses")}>All Courses</button><button onClick={()=>scroll("faculty")}>Faculty</button><button onClick={()=>scroll("gallery")}>Gallery</button><button onClick={()=>scroll("faq")}>FAQs</button></div>
+    <div className="footerColumn"><h3>Popular Courses</h3><button onClick={()=>scroll("courses")}>DCA & ADCA</button><button onClick={()=>scroll("courses")}>Tally</button><button onClick={()=>scroll("courses")}>PGDCA</button><button onClick={()=>scroll("courses")}>Data Entry & Typing</button><button onClick={()=>scroll("courses")}>Programming & Networking</button><button onClick={()=>scroll("courses")}>Computer Repairing</button></div>
+    <div className="footerColumn footerContact"><h3>Contact Us</h3><a href="https://www.google.com/maps/search/?api=1&query=In+front+of+Yagya+Maidan,+Zila+School+Road,+Dumka,+Jharkhand+814101" target="_blank" rel="noreferrer"><MapPin/> <span>{ADDRESS}<small>Get directions</small></span></a><a href={"tel:"+PHONE}><Phone/> <span>{DISPLAY_PHONE}<small>Call the institute</small></span></a><a href={wa('Hello ICT Computer Centre, I want to enquire about admission.')} target="_blank" rel="noreferrer"><MessageCircle/> <span>WhatsApp<small>Ask about courses and admissions</small></span></a><p className="footerHours"><Clock3/> Please contact the institute to confirm current opening hours.</p></div>
+   </div>
+   <div className="footerBottom"><span>© {new Date().getFullYear()} ICT Computer Centre. All rights reserved.</span><span>Dumka, Jharkhand, India</span><button onClick={()=>scroll("home")}>Back to top ↑</button></div>
+  </footer>
   <div className="mobileAdmission"><a href={"tel:"+PHONE}><Phone/> Call</a><a href={wa("Hello ICT Computer Centre, I want to enquire about admission.")} target="_blank" rel="noreferrer"><MessageCircle/> WhatsApp Enquiry</a></div>\n  <a className="floatingWa" href={wa('Hello ICT Computer Centre, I would like to know about admissions.')} target="_blank" rel="noreferrer" aria-label="Chat on WhatsApp"><MessageCircle/></a>
  </div>
 }
