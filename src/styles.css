@@ -53,3 +53,53 @@
  .detailBody aside{padding:19px}
  .detailDisclaimer{padding:15px 21px 25px}
 }
+
+
+/* Expanded institute experience */
+.facultyMark{display:flex;align-items:center;gap:12px;padding:15px 18px;border:1px solid #e2ebf4;border-radius:12px;color:#1978c9;font-size:10px;line-height:1.7}
+.facultyMark>svg{width:27px;height:27px}.facultyMark span{color:#7d8da1}.facultyMark b{color:#294765;font-size:11px}
+.facultyGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-top:30px}
+.facultyGrid article{border:1px solid #e5edf5;border-radius:14px;padding:24px;background:linear-gradient(145deg,#fff,#f8fbff)}
+.facultyIcon{width:45px;height:45px;display:grid;place-items:center;background:#eaf4ff;color:#1879cf;border-radius:12px}
+.facultyIcon svg{width:22px}.facultyGrid h3{font:800 16px Manrope;color:#1d3858;margin:18px 0 8px}
+.facultyGrid p{font-size:11px;line-height:1.8;color:#78899e;margin:0}
+.contentNote{font-size:10px;color:#9aa8b7;margin-top:16px}
+.gallerySection{background:#071b3a;color:#fff;padding:82px max(calc((100vw - 1150px)/2),5%);display:grid;grid-template-columns:.8fr 1.2fr;gap:55px;align-items:center}
+.galleryIntro label{font-size:10px;font-weight:800;letter-spacing:.16em;color:#79baff}
+.galleryIntro h2{font:800 clamp(30px,4vw,42px)/1.13 Manrope;letter-spacing:-.045em;margin:13px 0;color:#fff}
+.galleryIntro p{font-size:12px;line-height:1.85;color:#adc1d8;max-width:420px}
+.galleryCta{display:inline-flex;align-items:center;gap:8px;color:#8cc6ff;font-size:11px;font-weight:800;margin-top:16px}
+.galleryCta svg{width:15px}
+.galleryGrid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.galleryTile{min-height:145px;border:1px dashed #7294b855;background:linear-gradient(140deg,#173d67,#0b2748);border-radius:13px;display:flex;flex-direction:column;align-items:flex-start;justify-content:flex-end;padding:20px;position:relative;overflow:hidden}
+.galleryTile:before{content:'';position:absolute;width:160px;height:160px;border:1px solid #ffffff13;border-radius:50%;right:-45px;top:-55px}
+.galleryTile>svg{color:#7abaff;width:25px;height:25px;margin-bottom:auto}
+.galleryTile b{font:800 14px Manrope;color:#fff;position:relative}
+.galleryTile small{font-size:9px;color:#9db4ce;margin-top:5px;position:relative}
+.galleryLarge{grid-row:span 2;min-height:302px}
+.faqSection{padding-top:80px;padding-bottom:85px}
+.faqGrid{max-width:900px;margin:35px auto 0;display:grid;grid-template-columns:1fr 1fr;gap:11px}
+.faqGrid details{border:1px solid #e5edf4;border-radius:11px;padding:17px 18px;background:#fff}
+.faqGrid summary{display:flex;align-items:center;justify-content:space-between;gap:12px;list-style:none;cursor:pointer;color:#294563;font-size:11px;font-weight:800}
+.faqGrid summary::-webkit-details-marker{display:none}.faqGrid summary svg{width:16px;min-width:16px;color:#1979ce;transition:transform .2s}
+.faqGrid details[open] summary svg{transform:rotate(180deg)}
+.faqGrid details p{font-size:10px;line-height:1.8;color:#7b8ba0;margin:13px 0 0}
+.contactCall{display:inline-flex;align-items:center;gap:8px;border:1px solid #dbe7f2;border-radius:9px;padding:12px 15px;color:#176fbd;font-size:11px;font-weight:800;white-space:nowrap}
+.contactCall svg{width:16px}
+.footerLinks{display:flex;gap:15px;flex-wrap:wrap;margin-right:10px}
+.footerLinks button{border:0;background:none;color:#a9bdd5;font-size:10px;font-weight:700;cursor:pointer}
+.footerLinks button:hover{color:#fff}
+.mobileAdmission{display:none}
+@media(max-width:900px){.facultyMark{display:none}.gallerySection{gap:30px}.footerLinks{order:4;width:100%}}
+@media(max-width:680px){
+ .facultyGrid{grid-template-columns:1fr}.gallerySection{padding:60px 20px;grid-template-columns:1fr;gap:25px}
+ .galleryGrid{gap:9px}.galleryTile{min-height:130px;padding:15px}.galleryLarge{min-height:269px}
+ .faqSection{padding:60px 18px}.faqGrid{grid-template-columns:1fr;margin-top:26px}
+ .contact .sectionHead{display:flex;align-items:flex-start;flex-direction:column}
+ .contactCall{margin-top:16px}.footerLinks{gap:13px}
+ .mobileAdmission{display:flex;position:fixed;z-index:12;bottom:0;left:0;right:0;background:#fff;border-top:1px solid #e5edf4;padding:9px 12px calc(9px + env(safe-area-inset-bottom));gap:9px;box-shadow:0 -7px 25px #10274712}
+ .mobileAdmission a{flex:1;display:flex;align-items:center;justify-content:center;gap:7px;border-radius:8px;padding:11px 8px;font-size:11px;font-weight:800;background:#eaf4ff;color:#176fbd}
+ .mobileAdmission a:last-child{background:#20b967;color:#fff}.mobileAdmission svg{width:15px;height:15px}
+ .floatingWa{bottom:76px}
+ footer{padding-bottom:55px}
+}
